@@ -1,0 +1,14 @@
+---
+title:  "Tư duy phát triển"
+subtitle: "Liệu em đã nghe qua?"
+image: "img/tuduyphattrien.jpg"
+date:   2022-03-15 12:12:12
+---
+## Định nghĩa về tư duy phát triển (growth mindset)
+Khác với tư duy cố định (fixed mindset), tư duy phát triển là niềm tin rằng khả năng của bản thân sẽ được phát triển theo thời gian nếu có sự nỗ lực và đầu tư, bất kể bạn có tài năng thiên bẩm hay điểm xuất phát nào. Cách nhìn này đã tạo nhiều động lực và hứng thú học tập hơn, và là chiếc chìa khóa quan trọng dẫn đến con đường thành công.
+
+Chúng ta sẽ lấy một ví dụ khá quen thuộc với tuổi thơ của nhiều người: chạy xe đạp. Bạn lần đầu tập chạy xe đạp trên chiếc xe bốn bánh (thay vì hai bánh) vì vẫn chưa quen. Sau một thời gian luyện tập, bạn đã từ một chiếc xe bốn bánh đổi sang chiếc xe đạp ba bánh, từ ba bánh đổi sang xe đạp hai bánh (một chiếc xe đạp bình thường) và thậm chí có thể chạy xe đạp nhuần nhuyễn nếu tiếp tục luyện tập. Có thể thấy rằng khả năng chạy xe đạp của bạn đã được cải thiện rõ rệt ngày qua ngày thông qua việc luyện tập. Và đó chính là tư duy phát triển - “Tôi có thể cải thiện bản thân với sự nỗ lực và luyện tập”.
+
+Vậy còn tư duy cố định (fixed mindset), chúng khác gì nhau? Tư duy cố định là niềm tin rằng khả năng của bản thân đã được định sẵn từ khi sinh ra, và không thể thay đổi được. Trước kết quả kiểm tra toán không tốt, người có tư duy phát triển cho rằng “Không phải vì tôi không giỏi toán, mà vì tôi chưa giỏi toán”; người có tư duy cố định cho rằng “Toán không phải là thế mạnh của mình nên mình không thể đạt điểm tốt hơn được”. Học sinh với tư duy cố định thường bỏ cuộc khi họ không thể giải một bài tập khó và chấp nhận sự thua cuộc. Trong khi với tư duy phát triển, học sinh sẽ liên tục rèn luyện để trở nên thuần thục hơn, phát triển hơn những gì tưởng tượng, và thành công.
+
+Chính cách tư duy khác nhau dẫn đến góc nhìn khác nhau và phản ứng khác nhau đối với việc học, và vô hình trung, tư duy cố định đã giới hạn khả năng phát triển vì tin rằng bản thân không đủ khả năng, trong khi tư duy phát triển thúc đẩy con người ta nỗ lực cải thiện và luyện tập nhiều hơn để thành công. Bên cạnh đó, tư duy phát triển không chỉ là sự nỗ lực. Dweck (2015) cho rằng “Với tư duy cố định, tất cả đều xoay quanh kết quả. Nếu bạn thất bại - hoặc nếu bạn không phải là nhất - tất cả cố gắng đều trở nên công cốc. Tư duy phát triển tạo cơ hội cho mỗi người công nhận giá trị cho những việc mà họ đã và đang làm, bất kể kết quả là gì. Họ đang tiếp cận vấn đề, lập kế hoạch và giải quyết những việc quan trọng. Có thể họ chưa thể tìm ra giải pháp cho vấn đề ấy, nhưng quãng đường đã qua, những gì họ đã làm đều có ý nghĩa sâu sắc.”

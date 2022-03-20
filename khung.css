@@ -1,0 +1,302 @@
+
+.header-container{
+    background-color: #d89dcb;
+    color:white;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom:100px;
+}
+/* Navbar */
+.navbar{
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.Logo{
+    height: 10vh;
+}
+.navbar ul.PC_navbar li{
+    color:white;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul.PC_navbar li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar ul.PC_navbar li::after{
+    content: "";
+    align-items: center;
+    height: 3.5px;
+    bottom: -8px;
+    left: 0;
+    /* Cái này set cho animation */
+    width: 0;
+    background-color: transparent;
+    position: absolute;
+    transition: 0.25s;
+    color:white;
+}
+
+/* Hamburger */
+.burger_container{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    color:white;
+}
+
+.burger{
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.35s ease-in-out;
+}
+
+.burger::before, .burger::after{
+    content: "";
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.35s ease-in-out;
+}
+
+.burger::before{
+    transform: translateY(-8px);
+}
+
+.burger::after{
+    transform: translateY(8px);
+}
+
+.burger_container.open .burger{
+    transform: translateX(-20px);
+    background-color: transparent;
+}
+
+.burger_container.open .burger::before{
+    transform: rotate(45deg) translate(20px, -19.5px);
+}
+
+.burger_container.open .burger::after{
+    transform: rotate(-45deg) translate(20px, 19.5px);
+}
+
+.burger_menu{
+    position: absolute;
+    width: 100vw;
+    display: block;
+    background-color: transparent;
+
+    /* Chỉnh dựa trên height của .Logo với 1/2 height của burger_menu */
+    transform: translateX(0) translateY(90px);
+    transition: all ease-in-out .5s;
+}
+
+.burger_menu ul.mobile_navbar li{
+    text-align: center;
+    list-style: none;
+    display: block;
+    padding: 10px;
+}
+
+.burger_menu ul.mobile_navbar li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.burger_menu.open{
+    color:white;
+    background-color: #d89dcb;
+    transform: translateY(110px);
+    transition: all 0.5s ease-in-out;
+}
+
+.burger_menu.open ul.mobile_navbar li a{
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes Header_Transition {
+    0%{
+        transform: translateY(40px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes Description_Transition {
+    0%{
+        transform: translateY(60px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes Button_Transition {
+    0%{
+        transform: translateY(100px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/* Khi media lớn như pc */
+@media screen and (min-width: 801px) {
+    .burger_container{
+        display: none;
+    }
+    .navbar ul.PC_navbar li a {
+        font-size: 15px;
+    }
+    .navbar ul.PC_navbar li:hover::after{
+        width: 100%;
+        background-color: aqua;
+    }
+    .navbar ul.PC_navbar li a:hover{
+        color: red;
+    }
+    .burger_menu{
+        display: none;
+    }
+  }
+/* Chỉnh cỡ  navbar cho phù hợp  */
+  @media screen and (max-width: 1080px) {
+    .navbar ul.PC_navbar li a {
+        font-size: 15px;
+      }
+    .navbar ul.PC_navbar li::after{
+        height: 4px;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+    .navbar ul.PC_navbar li a {
+        font-size: 13px;
+      }
+      .navbar ul.PC_navbar li::after{
+        height: 3.3px;
+    }
+  }
+
+/* Khi media nhỏ cỡ mobile */
+  @media screen and (max-width: 800px) {
+    .navbar ul.PC_navbar li a, .navbar ul.PC_navbar li::after {
+        display: none;
+    }
+    .Logo{
+        width: 60px;
+        height: auto;
+        margin-left: 25px;
+    }
+    .navbar{
+        background-color: #d89dcb;
+        height: 1vh;
+        width: 100vw;
+        color:white;
+    }
+  }
+
+
+/* CSS for footer */
+
+body{
+	line-height: 1.5;
+    font-family: 'Oswald', sans-serif;
+
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer{
+	background-color: #d89dcb;
+    padding: 70px 0;
+    color: white;
+}
+.footer a{
+    color:white;
+    text-decoration:underline;
+}
+.footer-col{
+   width: 50%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-copyright{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+
+
+
+
+

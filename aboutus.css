@@ -1,0 +1,214 @@
+body{
+	line-height: 1.5;
+}
+.home{
+    width: 100%; 
+    height: 100vh;
+    transform: translateZ(0);
+    overflow: hidden;
+    position: re;
+}
+
+.homeafter{
+    width: 100%; 
+    height: 50vh;
+    transform: translateZ(0);
+    overflow: hidden;
+    position: re;
+}
+.backgroundcover{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.parallax{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+/* Title */
+.title{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+.title p a {
+    color:black;
+    text-decoration: underline;
+
+}
+@keyframes Header_Transition {
+    0%{
+        transform: translateY(40px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.title h1{
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 100px;
+    animation: Header_Transition 0.6s ease-out;
+}
+
+@keyframes Description_Transition {
+    0%{
+        transform: translateY(60px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.title p{
+    text-transform: uppercase;
+    margin: 0 2.5vw;
+    padding: 0;
+    animation: Description_Transition 1s ease-out;
+    margin-left:10%;
+    text-align: left;
+}
+
+.Para{
+    height: 480px;
+    margin-top: 170px;
+    margin-bottom: 70px;
+    
+    text-align: center;
+    /*
+    width: 33%;
+    */
+    position: relative;
+    display: inline-block;
+}
+.para6{
+    width:20%;
+}
+.para7{
+    width:33%;
+}
+.Para p{
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+.Para h1{
+
+    margin-top: 45px;
+    color:black;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.Para p{
+    overflow-y: hidden;
+    font-size: 25px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    text-align: center;
+}
+.Para  img{
+    width: 200px;
+    height: 200px;
+}
+@keyframes Button_Transition {
+    0%{
+        transform: translateY(100px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.title div a button{
+    color: black;
+    font-size: 1.5rem;
+    width: 190px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 20 25px;
+    padding: 0;
+    border: 3px solid rgb(255, 96, 96);
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+
+    animation: Button_Transition 1s ease-out;
+}
+/* Format span hiệu ứng của button */
+.BtnContainer button span{
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    background-color: rgb(255, 96, 96);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.title div a button:hover{
+    border: transparent;
+    color: rgb(15, 15, 15);
+}
+
+.BtnContainer button:hover span{
+    width: 100%;
+    border: 3px solid rgb(255, 106, 106);
+}
+
+/* Khi media lớn như pc */
+@media screen and (min-width: 801px) {
+    .navbar ul li a {
+        font-size: 20px;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+        background-color: rgb(255, 96, 96);
+    }
+    .navbar ul li a:hover{
+        color: rgb(197, 233, 221);
+    }
+    .title h1{
+        font-size: 60px;
+    }
+    .title p{
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+    .BtnContainer{
+        display: flex;
+        justify-content: center;
+    }
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
